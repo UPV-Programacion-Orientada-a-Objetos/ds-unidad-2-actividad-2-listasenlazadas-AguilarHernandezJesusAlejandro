@@ -1,0 +1,59 @@
+# Configuración de Doxygen para el proyecto Decodificador PRT-7
+# Autor: ITIID
+# Fecha: Noviembre 2025
+
+# Configuración del proyecto
+PROJECT_NAME           = "Decodificador PRT-7"
+PROJECT_NUMBER         = 1.0
+PROJECT_BRIEF          = "Sistema de Decodificación de Protocolo Industrial"
+
+# Directorio de salida
+OUTPUT_DIRECTORY       = doc
+
+# Idioma de la documentación
+OUTPUT_LANGUAGE        = Spanish
+
+# Archivos a documentar
+INPUT                  = decodificador_prt7.h decodificador_prt7.cpp main.cpp
+FILE_PATTERNS          = *.h *.cpp
+RECURSIVE              = NO
+
+# Extraer documentación
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = YES
+EXTRACT_STATIC         = YES
+
+# Generar gráficos
+HAVE_DOT               = YES
+CALL_GRAPH             = YES
+CALLER_GRAPH           = YES
+CLASS_DIAGRAMS         = YES
+COLLABORATION_GRAPH    = YES
+INCLUDE_GRAPH          = YES
+INCLUDED_BY_GRAPH      = YES
+GRAPHICAL_HIERARCHY    = YES
+DIRECTORY_GRAPH        = YES
+
+# Formato de salida
+GENERATE_HTML          = YES
+GENERATE_LATEX         = NO
+GENERATE_RTF           = NO
+GENERATE_XML           = NO
+
+# Configuración HTML
+HTML_OUTPUT            = html
+HTML_FILE_EXTENSION    = .html
+HTML_COLORSTYLE_HUE    = 220
+HTML_COLORSTYLE_SAT    = 100
+HTML_COLORSTYLE_GAMMA  = 80
+
+# Advertencias
+WARNINGS               = YES
+WARN_IF_UNDOCUMENTED   = YES
+WARN_IF_DOC_ERROR      = YES
+WARN_NO_PARAMDOC       = YES
+
+# Optimizaciones
+OPTIMIZE_OUTPUT_FOR_C  = NO
+INLINE_INHERITED_MEMB  = YES
+INHERIT_DOCS           = YES
